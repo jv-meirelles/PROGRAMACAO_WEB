@@ -4,13 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <style></style>
-    <title>Jupter</title>
+    <script src="js/val.js"></script>
+    <link rel="stylesheet" type="text/css" href="/CSS/style.css">
+    <title>Programação web</title>
 </head>
+
+<!--Separação visual pro corpo-->
 <body>
-    <a target="_blank"  href="Login.html"> <h1>CLique</h1></a><!--aaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
-    <a href="layout.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrI_-f36gSct8_EfM1L1yyMbQkFgEmet-ZAk9X1oM&s" alt="Login"></a>
-    <input type="password"> 
+    <h1><br></h1>
+    <div class="login">
+        <h1>Exposição amadora do James Webb<br><br></h1>
+        <form action="" id="login" method="POST" name="login">
+            <h3 style="align-items: center;">FAÇA O LOGIN</h3>
+
+            <div class="colun">
+                <div class="input-group">
+                    <div class="centralizar">
+                        <label for="Usuário">Usuário:</label>
+                        <input style="text-align: center;" type="text" id="user" name="nome" placeholder="USUÁRIO"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="colun">
+                <div class="input-group">
+                    <div class="centralizar">
+                        <label for="senha">Senha:</label>
+                        <input style="text-align: center;" type="password" id="senha" name="senha" placeholder="SENHA CADASTRADA"/>
+                    </div>
+                    
+                </div>     
+            </div>
+
+            <!--Botões-->
+            <h1><br></h1>
+            <div style="text-align:center"; margin: 25px 0; >
+                <button type="button" class="btn" onclick="val_login()">LOGIN</button>
+                <a href="registro.html"><button type="button" class="btn">REGISTRAR</button></a>
+            </div>
+        </form>
+    </div>
+    <a style="align-items: right;" href="fotos.html">skip</a>
 </body>
 </html>

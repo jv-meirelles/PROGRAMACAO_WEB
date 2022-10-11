@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/val.js"></script>
+    <link rel="stylesheet" type="text/css" href="/CSS/style.css">
+    <title>Registro</title>
+</head>
+
+<body>
+        <h1><br></h1>
+        <div class="login">
+            <h1 style="align-items: center;">CADASTRO</h1>
+            <form id="cadastro" method="POST" name="login">
+                <div class="colunas">
+                    <div class="input-group">
+                        <label for="nome">Usuário:</label>
+                        <input style="text-align: center;" type="text" id="cad_user" name="cad_user" placeholder="CRIE SEU USUÁRIO "/>
+                    </div>
+                        <div class="input-group">
+                            <label for="senha">Senha:</label>
+                            <input style="text-align: center;" type="password" id="senha" name="senha" placeholder="CRIE SUA SENHA"/>
+                        </div>
+                        <div class="input-group">
+                            <label for="confirmarsenha">Confirmar senha:</label>
+                            <input style="text-align: center;" type="password" id="confirmarsenha" name="confirmarsenha" placeholder="CONFIRME A SENHA"/>
+                        </div>
+                        <button type="button" class="btn" onclick="cadastrar()">CADASTRAR</button>
+                        <a href="index.html"><button type="button" class="btn">VOLTAR</button></a>
+                </div>
+            </form>
+        </div>
+</body>
+
+</html>

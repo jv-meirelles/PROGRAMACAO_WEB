@@ -1,0 +1,14 @@
+body {
+    background:linear-gradient(to left, rgb(114, 114, 114), rgba(139, 139, 139, 0.15));
+    background-size: 100%;
+    margin: 0;
+    height: 100%;
+    font-family: Arial, Calibri, Times New Roman;
+    font-size: 15px; 
+}
+
+.planet {
+    text-align: center;
+    align-items: center;
+    
+}
