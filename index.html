@@ -1,49 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/val.js"></script>
-    <link rel="stylesheet" type="text/css" href="/CSS/style.css">
-    <title>Programação web</title>
+    <title>Telescópio Espacial | James Webb</title>
+    <link rel="apple-touch-icon" href="IMG/favicon.png">
+    <link rel="icon" href="IMG/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <meta charset="utf-8">
 </head>
 
-<!--Separação visual pro corpo-->
 <body>
-    <h1><br></h1>
-    <div class="login">
-        <h1>Exposição amadora do James Webb<br><br></h1>
-        <form action="" id="login" method="POST" name="login">
-            <h3 style="align-items: center;">FAÇA O LOGIN</h3>
 
-            <div class="colun">
-                <div class="input-group">
-                    <div class="centralizar">
-                        <label for="Usuário">Usuário:</label>
-                        <input style="text-align: center;" type="text" id="user" name="nome" placeholder="USUÁRIO"/>
-                    </div>
-                </div>
+    <header>
+
+        <div id="tete-site">
+
+            <div class="titre-site" align="center">
+                <a href="index.php" class="nosoulignes">
+                    <h1 class="text9 blanc gras maj titre-site">
+                        James Webb
+                    </h1>
+                </a>
             </div>
 
-            <div class="colun">
-                <div class="input-group">
-                    <div class="centralizar">
-                        <label for="senha">Senha:</label>
-                        <input style="text-align: center;" type="password" id="senha" name="senha" placeholder="SENHA CADASTRADA"/>
-                    </div>
-                    
-                </div>     
-            </div>
+            <nav class="menu-nav" align="center">
+                <nav class="menu-nav" align="center">
+                    <ul>
+                        <li class="btn">
+                            <a href="index.html"><img src="IMG/home-active.png" class="nav-icon" alt="Accueil"></a>
+                        </li>
+                        <li class="btn">
+                            <a href="info.html"><img src="IMG/info.png" class="nav-icon" alt="Info"></a>
+                        </li>
+                        <li class="btn">
+                            <a href="photo.html"><img src="IMG/images.png" class="nav-icon" alt="Photo"></a>
+                        </li>
+                        <li class="btn">
+                            <a href="ressources.html"><img src="IMG/ressources.png" class="nav-icon"
+                                    alt="Ressource"></a>
+                        </li>
+                    </ul>
+                </nav>
 
-            <!--Botões-->
-            <h1><br></h1>
-            <div style="text-align:center"; margin: 25px 0; >
-                <button type="button" class="btn" onclick="val_login()">LOGIN</button>
-                <a href="registro.html"><button type="button" class="btn">REGISTRAR</button></a>
+        </div>
+
+    </header>
+
+    <div id="contenu-site">
+
+        <section class="accueil reveal" id="accueil">
+            <div class="accueilcontent" align="center">
+                <h2 class="autotext maj text9 blanc gras reveal-1">Site de apresentação do telescópio James Webb</h2>
+                <p class="text-acc text3 blanc reveal-1"><span class="gras">Bem vindo ao site do James Webb ST., o portal da prof. joyce para último telescópio enviado ao espaço. <br></span> Aqui você encontrará
+                    muita informação
+                    relacionado a
+                    Telescópio James Webb e notícias e recursos sobre ele.
+                    Uma galeria de fotos permitirá que você admire suas fotos impressionantes!</p>
+                <img src="IMG/img-acc.jpg" class="img-acc reveal-1" alt="Satelitte Space Web">
             </div>
-        </form>
+        </section>
+
     </div>
-    <a style="align-items: right;" href="fotos.html">skip</a>
+
+    <footer>
+
+        <div id="pied-site" class="reveal">
+            <div class="copyright reveal-1" align="center">
+                <p class="blanc">
+                   Site criado por João Vítor Meirelles para o curso de Progrmação para web da prof. Joyce.
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="JS/app.js"></script>
+    <script src="JS/autotext.js"></script>
+    <script src="JS/scroll-animation.js"></script>
+
 </body>
+
 </html>
