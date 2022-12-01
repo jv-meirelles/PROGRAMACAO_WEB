@@ -1,57 +1,61 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!-- views/signup.ejs -->
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/val.js"></script>
-    <link rel="stylesheet" type="text/css" href="/CSS/style.css">
-    <title>Registro</title>
+	<title>Registro</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> 
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> 
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
-
 <body>
-        <h1><br></h1>
-        <div class="login">
-            <h1 style="align-items: center;">CADASTRO</h1>
-            <form id="cadastro" method="POST" name="login">
-                <div class="colunas">
-                    <div class="input-group">
-                        <label for="nome">Usuário:</label>
-                        <input style="text-align: center;" type="text" id="cad_user" name="cad_user" placeholder="CRIE SEU USUÁRIO "/>
-                    </div>
-                    <div class="input-group">
-                        <label for="senha">Senha:</label>
-                        <input style="text-align: center;" type="password" id="senha" name="senha" placeholder="CRIE SUA SENHA"/>
-                    </div>
-                    <div class="input-group">
-                        <label for="confirmarsenha">Confirmar senha:</label>
-                        <input style="text-align: center;" type="password" id="confirmarsenha" name="confirmarsenha" placeholder="CONFIRME A SENHA"/>
-                    </div>
-                    
-                    <div class="input-group">
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" placeholder="INFORME SEU NOME"/>
-                    </div>
-            
-                    <div class="input-group">
-                        <label for="sobrenome">Sobrenome:</label>
-                        <input type="text" id="sobrenome" name="sobrenome" placeholder="INFORME SEU SOBRENOME"/>
-                    </div>
+<div class="container">
 
-                    <div class="input-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="INFORME SEU EMAIL"/>
-                    </div>
-                    <div class="input-group">
-                        <label for="newsletter"></label>
-                        <input type="checkbox" id="newsletter" name="newsletter"/>
-                        <small>ACEITO OS <a href="termos.html">TERMOS DE USUÁRIO</a></small>
-                    </div>
-                    <button type="button" class="btn" onclick="cadastrar()">CADASTRAR</button>
-                    <a href="index.html"><button type="button" class="btn">VOLTAR</button></a>
-                </div>
-            </form>
+<div class="col-sm-6 col-sm-offset-3">
+
+	<h1><span class="fa fa-sign-in"></span> Registro</h1>
+
+	<form action="/signup" method="post">
+		<div class="form-group">
+			<label>Login</label>
+			<input type="text" class="form-control" name="username">
+		</div>
+		<div class="form-group">
+			<label>Senha</label>
+			<input type="password" class="form-control" name="password">
+		</div>
+        <div class="input-group">
+            <label for="confirmarsenha">Confirmar senha:</label>
+            <input type="password" class="form-control" name="confirmPassword">
         </div>
-</body>
+        
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" class="form-control" name="nome">
+        </div>
 
+        <div class="form-group">
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" class="form-control" name="sobrenome">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+        </div>
+        <div class="form-group">
+            <label for="newsletter"></label>
+            <input type="checkbox" id="newsletter" name="newsletter"/>
+            <small>ACEITO OS <a href="termos.html">TERMOS DE USUÁRIO</a></small>
+		<button type="submit" class="btn btn-warning btn-lg">Signup</button>
+	</form>
+
+	<hr>
+
+	<p>Já possui conta? > <a href="/Login.html">Login</a></p>
+	<p>Voltar ao <a href="/">inicio</a>.</p>
+
+</div>
+
+</div>
+</body>
 </html>
